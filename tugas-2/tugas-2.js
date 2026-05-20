@@ -1,0 +1,115 @@
+// string.js
+// Jawaban Soal 1
+var word = 'JavaScript'; 
+var second = 'is'; 
+var third = 'awesome'; 
+var fourth = 'and'; 
+var fifth = 'I'; 
+var sixth = 'love'; 
+var seventh = 'it!';
+console.log(word.concat(' ',second,' ', third,' ',fourth,' ', fifth,' ', sixth,' ', seventh))
+
+
+// Jawaban Soal 2
+var sentence = "I am going to be Web Developer"; 
+
+var exampleFirstWord = sentence[0] ; 
+var secondWord = sentence[2] + sentence[3]  ; 
+var thirdWord = sentence[5] + sentence[6]+ sentence[7]+ sentence[8]+ sentence[9]; // lakukan sendiri 
+var fourthWord = sentence[11] + sentence[12]; // lakukan sendiri 
+var fifthWord = sentence[14] + sentence[15]; // lakukan sendiri 
+var sixthWord = sentence[17] + sentence[18]+ sentence[19]; // lakukan sendiri 
+var seventhWord = sentence[21]+ sentence[22]+ sentence[23]+ sentence[24]+ sentence[25]+ sentence[26]+ sentence[27]+ sentence[28]+ sentence[29]; // lakukan sendiri 
+
+console.log('First Word: ' + exampleFirstWord); 
+console.log('Second Word: ' + secondWord); 
+console.log('Third Word: ' + thirdWord); 
+console.log('Fourth Word: ' + fourthWord); 
+console.log('Fifth Word: ' + fifthWord); 
+console.log('Sixth Word: ' + sixthWord); 
+console.log('Seventh Word: ' + seventhWord); 
+
+
+// Jawaban Soal 3
+var sentence3 = 'wow JavaScript is so cool'; 
+
+var exampleFirstWord3 = sentence3.substring(0, 3); 
+var secondWord3 = sentence3.substring(4, 14);; // do your own! 
+var thirdWord3 = sentence3.substring(15, 17);; // do your own! 
+var fourthWord3 = sentence3.substring(18, 20);; // do your own! 
+var fifthWord3 = sentence3.substring(21, 25);; // do your own! 
+
+var firstWordLength = exampleFirstWord3.length
+var firstWordLength1 = secondWord3.length
+var firstWordLength2 = thirdWord3.length
+var firstWordLength3 = fourthWord3.length
+var firstWordLength4 = fifthWord3.length
+// lanjutkan buat variable lagi di bawah ini 
+console.log('First Word: ' + exampleFirstWord3 + ', with length: ' + firstWordLength); 
+console.log('Second Word: ' + secondWord3 + ', with length: ' + firstWordLength1); 
+console.log('Third Word: ' + thirdWord3+ ', with length: ' + firstWordLength2); 
+console.log('Fourth Word: ' + fourthWord3+ ', with length: ' + firstWordLength3); 
+console.log('Fifth Word: ' + fifthWord3+ ', with length: ' + firstWordLength4); 
+
+
+
+
+
+
+// conditional.js
+// Jawaban Soal if-else
+function gameRole(nama, peran) {
+
+    if (nama.length <= 0) {
+        console.log("Nama harus diisi!");
+    } else if (peran.length <= 0) {
+        console.log(`Halo ${nama}, Pilih peranmu untuk memulai game!`);
+
+    } else if (peran == "Penyihir") {
+        console.log(`Selamat datang di Dunia Werewolf, ${nama}`);
+        console.log(`Halo Penyihir ${nama}, kamu dapat melihat siapa yang menjadi werewolf!`);
+    } else if (peran == "Guard") {
+        console.log(`Selamat datang di Dunia Werewolf, ${nama}`);
+        console.log(`Halo Guard ${nama}, kamu akan membantu melindungi temanmu dari serangan werewolf.`);
+    } else if (peran == "Werewolf") {
+        console.log(`Selamat datang di Dunia Werewolf, ${nama}`);
+        console.log(`Halo Werewolf ${nama}, kamu akan memakan mangsa setiap malam!`);
+    }
+}
+gameRole("", "");
+gameRole("John", "");
+gameRole("Jane", "Penyihir");
+gameRole("Jenita", "Guard");
+gameRole("Junaedi", "Werewolf");
+
+
+
+
+
+
+// function.js
+// Jawaban Soal 1
+
+function teriak() {
+  return 'Halo Sanbers!'
+}
+// TEST CASE
+console.log(teriak()) // "Halo Sanbers!" 
+
+
+// Jawaban Soal 2
+function kalikan(num1, num2) {
+  return num1*num2;
+}
+console.log(kalikan(4, 12)) // 48
+
+
+
+// Jawaban Soal 3
+function introduce(name, age, address, hobby) {
+  return(`Nama saya ${name}, umur saya ${age} tahun, alamat saya di ${address}, dan saya punya hobby yaitu ${hobby}!`)
+}
+
+ 
+ // TEST CASES
+console.log(introduce("Agus", 30, "Jogja", "Gaming")) // Menampilkan "Nama saya Agus, umur saya 30 tahun, alamat saya di Jogja, 
