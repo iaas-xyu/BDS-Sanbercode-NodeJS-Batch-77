@@ -50,4 +50,3 @@ console.log('Second Word: ' + secondWord3 + ', with length: ' + firstWordLength1
 console.log('Third Word: ' + thirdWord3+ ', with length: ' + firstWordLength2); 
 console.log('Fourth Word: ' + fourthWord3+ ', with length: ' + firstWordLength3); 
 console.log('Fifth Word: ' + fifthWord3+ ', with length: ' + firstWordLength4); 
-
