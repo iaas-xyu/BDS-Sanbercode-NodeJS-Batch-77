@@ -8,14 +8,19 @@ var thisYear = now.getFullYear() // 2025 (tahun sekarang)
 
 function arrayToObject(arr){
     for (var i=0; i < arr.length; i++){
-        console.log("FirstName: "+ arr[i][0]);
-        console.log("LastName: "+ arr[i][1]);
-        console.log("gender: "+ arr[i][2]);
         if (arr[i][3] <= 2025 ) {
-            console.log("Age: "+ (2026 - arr[i][3]));
-        } else if (arr[i][3] >= 2026 || arr[i][3] === undefined){
-            console.log("Age: Invalid birth year")
+            age = thisYear - arr[i][3]
+        } else if (arr[i][3] >= thisYear || arr[i][3] === undefined){
+            age = "Invalid birth year";
         }
+        const person = {
+            FirstName: arr[i][0],
+            LastName: arr[i][1],
+            gender: arr[i][2],
+            age: age,
+        }
+        console.log(i+1 +"."+ arr[i][0] +" "+ arr[i][1] +": ");
+        console.log(JSON.stringify(person, null, 2));
         console.log(" ");
     }
 }
