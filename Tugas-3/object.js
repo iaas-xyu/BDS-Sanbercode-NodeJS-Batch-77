@@ -13,6 +13,7 @@ function arrayToObject(arr){
         } else if (arr[i][3] >= thisYear || arr[i][3] === undefined){
             age = "Invalid birth year";
         }
+        
         const person = {
             FirstName: arr[i][0],
             LastName: arr[i][1],
